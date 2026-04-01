@@ -1,0 +1,42 @@
+:root{
+    --main: #fff;
+    --text: #000;
+    --header: #EEF0F8;
+    --border: #CBD2ED;
+    --color-primary: #3156EB;
+    --hover-primary: #1137CC;
+    --color-secondary: linear-gradient(103.42deg, #FC4665 6.06%, #3156EB 77.61%);
+    --hover-secondary: linear-gradient(103.42deg, #3556D8 6.06%, #3156EB 77.61%);
+    --radius: 8px;
+	--link: #3156EB;
+    --shadow: 0 2px 3px #00000026;
+}
+
+* { margin:0; padding:0; box-sizing:border-box;}
+body { overflow-x:hidden; position: relative; background: var(--main); font-family: "OpenSans",sans-serif;}
+body.error { background: var(--error); }
+a { text-decoration:none; transition: 0.3s; }
+a:hover {
+    text-decoration: underline;
+}
+input, button { box-shadow:none; font-family: "OpenSans", sans-serif;}
+input {outline:none;}
+h1 {color: var(--text);}
+h2, h3, h4, h5, h6 {color: var(--text);}
+p, span, li, a { color: var(--text); }
+button { cursor:pointer; background:transparent; overflow: hidden;}
+img {max-width:100%; display:block; height: auto;}
+
+/* Table content */
+
+.wp-block-table {max-width: 100%;overflow-x:auto;}
+.wp-block-table table {width:100%;  border-collapse: collapse; margin-bottom:20px; overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow);}
+.wp-block-table table td { 
+    text-align:center; padding:10px; color:var(--text); font-size: 16px;
+}
+.wp-block-table table tr:nth-child(2n) {background:var(--color-secondary);}
+.wp-block-table table tr:nth-child(2n) td {color: var(--main);}
+
+a {
+    text-decoration: none;
+}
